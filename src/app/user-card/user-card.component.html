@@ -1,0 +1,15 @@
+
+ <div class="card mb-5" style="width: 18rem;">
+    <img [src]="myuser.image" class="card-img-top" alt="...">
+   
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Name : {{myuser.username}}       <i class="fas fa-star" [ngStyle]="{ 'color': myuser.is_verified ? 'red' : 'green' }"></i>
+      </li>
+      <li class="list-group-item">Email : {{myuser.email}}</li>
+      <li class="list-group-item">Phone : {{myuser.phone}}</li>
+      
+      <li class="list-group-item"> {{myuser.phone}}</li>
+
+    
+    </ul>  
+  </div>

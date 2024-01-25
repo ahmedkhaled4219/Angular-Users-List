@@ -1,0 +1,15 @@
+<!-- PARENT COMPONENT -->
+
+<div class="container">
+    <h1 class="text-center">Users List</h1>
+    <hr />
+    <div class="row">
+     <!-- CHILD COMPONENT -->
+     @for (user of users; track user.id) {
+      <div class="col-md-4">
+        <app-user-card [myuser]="user"></app-user-card>
+    </div>
+    }
+    </div>
+</div>
+
